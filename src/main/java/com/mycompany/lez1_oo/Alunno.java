@@ -16,7 +16,9 @@ public class Alunno {
 
     private String cognome;
     private String nome;
-    private int voto;
+    private int votoFinale;
+    private Esame esameAmmissione;
+
     private LocalDateTime datanascita;
     private String segnoZodiacale;
     //costruttore metodo con stesso nome classe
@@ -29,8 +31,8 @@ public class Alunno {
         return nome;
     }
 
-    public int getVoto() {
-        return voto;
+    public int getVotoFinale() {
+        return votoFinale;
     }
 
     public String getSegnoZodiacale() {
@@ -45,8 +47,17 @@ public class Alunno {
         this.nome = nome;
     }
 
-    public void setVoto(int voto) {
-        this.voto = voto;
+    public void setVotoFinale(int votoFinale) {
+        this.votoFinale = votoFinale;
+    }
+    
+    
+    public Esame getEsameAmmissione() {
+        return esameAmmissione;
+    }
+
+    public void setEsameAmmissione(Esame esameAmmissione) {
+        this.esameAmmissione = esameAmmissione;
     }
 /**
  * costruttore Alunno con parametri datanascita automatica
@@ -57,7 +68,7 @@ public class Alunno {
     public Alunno(String cognome, String nome, int voto) {
         this.cognome = cognome;
         this.nome = nome;
-        this.voto = voto;
+        this.votoFinale = voto;
         datanascita = LocalDateTime.now();
 
     }
