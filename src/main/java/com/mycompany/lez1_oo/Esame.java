@@ -20,6 +20,7 @@ public class Esame {
     public Esame(String nomeEsame, int votoEsame) {
         this.nomeEsame = nomeEsame;
         this.votoEsame = votoEsame;
+        dataEsame= LocalDateTime.now();
     }
 
     public String getNomeEsame() {
@@ -50,9 +51,6 @@ public class Esame {
         return dataEsame;
     }
 
-    public void setDataEsame(LocalDateTime dataEsame) {
-        this.dataEsame = dataEsame;
-    }
     
     
     
