@@ -36,8 +36,24 @@ public class GestioneScuola extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        jTabbedPane2 = new javax.swing.JTabbedPane();
+        jTabbedPane3 = new javax.swing.JTabbedPane();
+        jTabbedPane4 = new javax.swing.JTabbedPane();
+        jToolBar1 = new javax.swing.JToolBar();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextPane1 = new javax.swing.JTextPane();
+        jTabbedPane5 = new javax.swing.JTabbedPane();
+        jTabbedPane6 = new javax.swing.JTabbedPane();
+        jTabbedPane7 = new javax.swing.JTabbedPane();
+        jTabbedPane8 = new javax.swing.JTabbedPane();
+        jTabbedPane9 = new javax.swing.JTabbedPane();
+        jPasswordField1 = new javax.swing.JPasswordField();
+        jTabbedPane10 = new javax.swing.JTabbedPane();
+        jTabbedPane11 = new javax.swing.JTabbedPane();
+        jTabbedPane12 = new javax.swing.JTabbedPane();
+        jTabbedPane13 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
-        lGestioneCorsi = new javax.swing.JLabel();
         bAddCorso = new javax.swing.JButton();
         tnomeCorso = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
@@ -47,14 +63,24 @@ public class GestioneScuola extends javax.swing.JFrame {
         tnumOre = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tpelencocorsi = new javax.swing.JTextPane();
+        lGestioneCorsi1 = new javax.swing.JLabel();
+        jTabbedPane14 = new javax.swing.JTabbedPane();
+
+        jToolBar1.setRollover(true);
+
+        jScrollPane2.setViewportView(jTextPane1);
+
+        jPasswordField1.setText("jPasswordField1");
+
+        jTabbedPane11.setBackground(new java.awt.Color(48, 36, 209));
+
+        jTabbedPane12.setForeground(new java.awt.Color(75, 137, 158));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestione scuola");
         setBackground(new java.awt.Color(189, 255, 189));
 
         jPanel1.setBackground(new java.awt.Color(193, 243, 187));
-
-        lGestioneCorsi.setText("Gestione Corsi");
 
         bAddCorso.setText("Add Corso");
         bAddCorso.addActionListener(new java.awt.event.ActionListener() {
@@ -80,6 +106,8 @@ public class GestioneScuola extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(tpelencocorsi);
 
+        lGestioneCorsi1.setText("Gestione Corsi");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -88,59 +116,60 @@ public class GestioneScuola extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(lGestioneCorsi)
                         .addComponent(bAddCorso)
                         .addComponent(tnomeCorso)
                         .addComponent(jLabel1)
                         .addComponent(jLabel2)
-                        .addComponent(tedizione, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE))
+                        .addComponent(tedizione, javax.swing.GroupLayout.DEFAULT_SIZE, 261, Short.MAX_VALUE)
+                        .addComponent(lGestioneCorsi1))
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                         .addComponent(tnumOre, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 450, Short.MAX_VALUE)
+                .addComponent(jScrollPane1)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lGestioneCorsi)
+                .addGap(63, 63, 63)
+                .addComponent(lGestioneCorsi1)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tnomeCorso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tnomeCorso, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tedizione, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tnumOre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(bAddCorso)
-                        .addGap(0, 64, Short.MAX_VALUE))
-                    .addComponent(jScrollPane1))
-                .addContainerGap())
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tedizione, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(tnumOre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(bAddCorso)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
+
+        jTabbedPane13.addTab("tab1", jPanel1);
+        jTabbedPane13.addTab("tab2", jTabbedPane14);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 51, Short.MAX_VALUE)
+                .addComponent(jTabbedPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 715, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(62, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jTabbedPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -230,8 +259,26 @@ public class GestioneScuola extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lGestioneCorsi;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTabbedPane jTabbedPane1;
+    private javax.swing.JTabbedPane jTabbedPane10;
+    private javax.swing.JTabbedPane jTabbedPane11;
+    private javax.swing.JTabbedPane jTabbedPane12;
+    private javax.swing.JTabbedPane jTabbedPane13;
+    private javax.swing.JTabbedPane jTabbedPane14;
+    private javax.swing.JTabbedPane jTabbedPane2;
+    private javax.swing.JTabbedPane jTabbedPane3;
+    private javax.swing.JTabbedPane jTabbedPane4;
+    private javax.swing.JTabbedPane jTabbedPane5;
+    private javax.swing.JTabbedPane jTabbedPane6;
+    private javax.swing.JTabbedPane jTabbedPane7;
+    private javax.swing.JTabbedPane jTabbedPane8;
+    private javax.swing.JTabbedPane jTabbedPane9;
+    private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JToolBar jToolBar1;
+    private javax.swing.JLabel lGestioneCorsi1;
     private javax.swing.JTextField tedizione;
     private javax.swing.JTextField tnomeCorso;
     private javax.swing.JTextField tnumOre;
