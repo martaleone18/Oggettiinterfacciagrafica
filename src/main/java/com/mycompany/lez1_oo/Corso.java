@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author tss
  */
 public class Corso {
+
     private String nomeCorso;
     private int numOre;
     private String edizione;
@@ -19,21 +20,29 @@ public class Corso {
 
     public Corso(String nomeCorso) {
         this.nomeCorso = nomeCorso;
-        registro= new ArrayList<Alunno>();
-        numOre=0;
-        edizione="---";
+        registro = new ArrayList<Alunno>();
+        numOre = 0;
+        edizione = "---";
     }
-    
-    public String getRowCorso(){
-        String ris="";
-        ris= nomeCorso + " - ed. " + edizione + " - " +numOre + "H\n";
+
+    public String getRowCorso() {
+        String ris = "";
+        ris = nomeCorso + " - ed. " + edizione + " - " + numOre + "H\n";
         return ris;
     }
 
-    
-    
-    
-    
+    public String getRowAlunniCorso() {
+        String ris = "";
+        ris = nomeCorso + " - ed. " + edizione + " - " + numOre + "H\n";
+        for (int i = 0; i < registro.size(); i++) {
+            Alunno al = registro.get(i);
+            ris += (i + 1) + ") " + al.getCognome() + " " + al.getNome() + "\n";
+
+        }
+
+        return ris;
+    }
+
     public String getNomeCorso() {
         return nomeCorso;
     }
@@ -65,9 +74,5 @@ public class Corso {
     public void setRegistro(ArrayList<Alunno> registro) {
         this.registro = registro;
     }
-    
-    
-    
-    
-    
+
 }
