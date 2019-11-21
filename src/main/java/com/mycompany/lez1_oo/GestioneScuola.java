@@ -52,7 +52,17 @@ public class GestioneScuola extends javax.swing.JFrame {
         jTabbedPane10 = new javax.swing.JTabbedPane();
         jTabbedPane11 = new javax.swing.JTabbedPane();
         jTabbedPane12 = new javax.swing.JTabbedPane();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jTextPane2 = new javax.swing.JTextPane();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        jTextPane3 = new javax.swing.JTextPane();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTextPane4 = new javax.swing.JTextPane();
+        jTabbedPane14 = new javax.swing.JTabbedPane();
         jTabbedPane13 = new javax.swing.JTabbedPane();
+        jLayeredPane1 = new javax.swing.JLayeredPane();
+        jPanel2 = new javax.swing.JPanel();
+        Tab2 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         bAddCorso = new javax.swing.JButton();
         tnomeCorso = new javax.swing.JTextField();
@@ -64,7 +74,22 @@ public class GestioneScuola extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         tpelencocorsi = new javax.swing.JTextPane();
         lGestioneCorsi1 = new javax.swing.JLabel();
-        jTabbedPane14 = new javax.swing.JTabbedPane();
+        jPanel3 = new javax.swing.JPanel();
+        Gestiscialunni = new javax.swing.JLabel();
+        Inscognome = new javax.swing.JLabel();
+        jScrollPane6 = new javax.swing.JScrollPane();
+        jTextPane5 = new javax.swing.JTextPane();
+        Insnome = new javax.swing.JLabel();
+        jScrollPane7 = new javax.swing.JScrollPane();
+        jTextPane6 = new javax.swing.JTextPane();
+        jScrollPane8 = new javax.swing.JScrollPane();
+        jTextPane7 = new javax.swing.JTextPane();
+        jScrollPane9 = new javax.swing.JScrollPane();
+        jTextPane8 = new javax.swing.JTextPane();
+        ncorso = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
+        jLabel8 = new javax.swing.JLabel();
+        Addalunno = new javax.swing.JButton();
 
         jToolBar1.setRollover(true);
 
@@ -75,6 +100,12 @@ public class GestioneScuola extends javax.swing.JFrame {
         jTabbedPane11.setBackground(new java.awt.Color(48, 36, 209));
 
         jTabbedPane12.setForeground(new java.awt.Color(75, 137, 158));
+
+        jScrollPane3.setViewportView(jTextPane2);
+
+        jScrollPane4.setViewportView(jTextPane3);
+
+        jScrollPane5.setViewportView(jTextPane4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Gestione scuola");
@@ -126,7 +157,7 @@ public class GestioneScuola extends javax.swing.JFrame {
                         .addComponent(tnumOre, javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 392, Short.MAX_VALUE)
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -150,27 +181,151 @@ public class GestioneScuola extends javax.swing.JFrame {
                 .addComponent(bAddCorso)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jTabbedPane13.addTab("tab1", jPanel1);
-        jTabbedPane13.addTab("tab2", jTabbedPane14);
+        Tab2.addTab("Gestisci Corso", jPanel1);
+
+        jPanel3.setBackground(new java.awt.Color(52, 182, 206));
+
+        Gestiscialunni.setText("Gestisci Alunni");
+
+        Inscognome.setText("Inserisci cognome:");
+
+        jScrollPane6.setViewportView(jTextPane5);
+
+        Insnome.setText("Inserisci nome:");
+
+        jScrollPane7.setViewportView(jTextPane6);
+
+        jScrollPane8.setViewportView(jTextPane7);
+
+        jScrollPane9.setViewportView(jTextPane8);
+
+        ncorso.setText("N°corso");
+
+        jTextField1.setText("0");
+        jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jLabel8.setText("nessun corso");
+
+        Addalunno.setText("Add Alunno");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(24, 24, 24)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(ncorso)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel8)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Insnome)
+                            .addComponent(Inscognome)
+                            .addComponent(Gestiscialunni)
+                            .addComponent(jScrollPane6, javax.swing.GroupLayout.DEFAULT_SIZE, 175, Short.MAX_VALUE)
+                            .addComponent(jScrollPane7)
+                            .addComponent(jScrollPane8))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 132, Short.MAX_VALUE)
+                        .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(238, 238, 238)
+                .addComponent(Addalunno)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jScrollPane9, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(Gestiscialunni)
+                        .addGap(27, 27, 27)
+                        .addComponent(Inscognome)
+                        .addGap(31, 31, 31)
+                        .addComponent(jScrollPane6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(29, 29, 29)
+                        .addComponent(Insnome)
+                        .addGap(34, 34, 34)
+                        .addComponent(jScrollPane7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(36, 36, 36)
+                        .addComponent(jScrollPane8, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(22, 22, 22)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(ncorso)
+                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Addalunno))
+        );
+
+        Tab2.addTab("Gestisci Alunni", jPanel3);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Tab2, javax.swing.GroupLayout.PREFERRED_SIZE, 715, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(Tab2, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
+        jLayeredPane1.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout jLayeredPane1Layout = new javax.swing.GroupLayout(jLayeredPane1);
+        jLayeredPane1.setLayout(jLayeredPane1Layout);
+        jLayeredPane1Layout.setHorizontalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jLayeredPane1Layout.setVerticalGroup(
+            jLayeredPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jLayeredPane1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 51, Short.MAX_VALUE)
-                .addComponent(jTabbedPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 715, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jTabbedPane13, javax.swing.GroupLayout.PREFERRED_SIZE, 536, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(42, Short.MAX_VALUE))
         );
 
         pack();
@@ -203,8 +358,12 @@ public class GestioneScuola extends javax.swing.JFrame {
         tnomeCorso.setText("");
         tedizione.setText("");
         tnumOre.setText("0");
-        
+
     }//GEN-LAST:event_bAddCorsoActionPerformed
+
+    private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -254,14 +413,30 @@ public class GestioneScuola extends javax.swing.JFrame {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Addalunno;
+    private javax.swing.JLabel Gestiscialunni;
+    private javax.swing.JLabel Inscognome;
+    private javax.swing.JLabel Insnome;
+    private javax.swing.JTabbedPane Tab2;
     private javax.swing.JButton bAddCorso;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLayeredPane jLayeredPane1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JScrollPane jScrollPane6;
+    private javax.swing.JScrollPane jScrollPane7;
+    private javax.swing.JScrollPane jScrollPane8;
+    private javax.swing.JScrollPane jScrollPane9;
     private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTabbedPane jTabbedPane10;
     private javax.swing.JTabbedPane jTabbedPane11;
@@ -276,9 +451,18 @@ public class GestioneScuola extends javax.swing.JFrame {
     private javax.swing.JTabbedPane jTabbedPane7;
     private javax.swing.JTabbedPane jTabbedPane8;
     private javax.swing.JTabbedPane jTabbedPane9;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextPane jTextPane1;
+    private javax.swing.JTextPane jTextPane2;
+    private javax.swing.JTextPane jTextPane3;
+    private javax.swing.JTextPane jTextPane4;
+    private javax.swing.JTextPane jTextPane5;
+    private javax.swing.JTextPane jTextPane6;
+    private javax.swing.JTextPane jTextPane7;
+    private javax.swing.JTextPane jTextPane8;
     private javax.swing.JToolBar jToolBar1;
     private javax.swing.JLabel lGestioneCorsi1;
+    private javax.swing.JLabel ncorso;
     private javax.swing.JTextField tedizione;
     private javax.swing.JTextField tnomeCorso;
     private javax.swing.JTextField tnumOre;
